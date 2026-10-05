@@ -1,0 +1,1002 @@
+
+
+            © <!DOCTYPE html>
+            <html lang="pt-BR">
+            
+            <head>
+                <meta charset="UTF-8">
+            
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                >
+            
+                <meta
+                    name="description"
+                    content="TJ Burguer - Hambúrguer artesanal, acompanhamentos e bebidas. Monte seu pedido online."
+                >
+            
+                <title>TJ Burguer | Hambúrguer Artesanal</title>
+            
+                <link
+                    rel="stylesheet"
+                    href="style.css"
+                >
+            </head>
+            
+            
+            <body>
+            
+            
+                <!-- ========================================
+                     CABEÇALHO
+                ========================================= -->
+            
+                <header class="cabecalho">
+            
+                    <a
+                        href="#inicio"
+                        class="logo"
+                    >
+                        TJ <span>BURGUER</span>
+                    </a>
+            
+            
+                    <nav class="menu">
+            
+                        <a href="#inicio">
+                            Início
+                        </a>
+            
+                        <a href="#hamburgueres">
+                            Cardápio
+                        </a>
+            
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+            
+                        <a href="#contato">
+                            Contato
+                        </a>
+            
+                    </nav>
+            
+            
+                    <button
+                        class="botao-carrinho-topo"
+                        id="abrirCarrinho"
+                        type="button"
+                    >
+                        🛒
+                        <span>Carrinho</span>
+            
+                        <strong id="contadorCarrinho">
+                            0
+                        </strong>
+                    </button>
+            
+                </header>
+            
+            
+            
+                <main>
+            
+            
+                    <!-- ========================================
+                         HERO
+                    ========================================= -->
+            
+                    <section
+                        class="hero"
+                        id="inicio"
+                    >
+            
+                        <div class="hero-overlay"></div>
+            
+            
+                        <div class="hero-conteudo">
+            
+                            <p class="hero-tag">
+                                HAMBÚRGUER ARTESANAL
+                            </p>
+            
+            
+                            <h1>
+                                SEU MOMENTO.
+                                <span>SEU BURGER.</span>
+                            </h1>
+            
+            
+                            <p class="hero-descricao">
+                                Hambúrguer artesanal, ingredientes selecionados
+                                e aquele sabor que faz você querer pedir de novo.
+                            </p>
+            
+            
+                            <div class="hero-botoes">
+            
+                                <a
+                                    href="#hamburgueres"
+                                    class="botao-principal"
+                                >
+                                    🍔 VER CARDÁPIO
+                                </a>
+            
+            
+                                <button
+                                    type="button"
+                                    class="botao-secundario"
+                                    id="abrirCarrinhoHero"
+                                >
+                                    🛒 MEU PEDIDO
+                                </button>
+            
+                            </div>
+            
+            
+                            <div class="hero-info">
+            
+                                <div>
+                                    <strong>🍔</strong>
+                                    <span>Artesanal</span>
+                                </div>
+            
+                                <div>
+                                    <strong>🔥</strong>
+                                    <span>Feito na hora</span>
+                                </div>
+            
+                                <div>
+                                    <strong>🚀</strong>
+                                    <span>Delivery</span>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                    </section>
+            
+            
+            
+                    <!-- ========================================
+                         DIFERENCIAIS
+                    ========================================= -->
+            
+                    <section class="destaques">
+            
+                        <div class="destaque-item">
+                            <span>🥩</span>
+            
+                            <div>
+                                <h3>Carne artesanal</h3>
+                                <p>Preparada com muito sabor.</p>
+                            </div>
+                        </div>
+            
+            
+                        <div class="destaque-item">
+                            <span>🍞</span>
+            
+                            <div>
+                                <h3>Pão macio</h3>
+                                <p>A combinação perfeita.</p>
+                            </div>
+                        </div>
+            
+            
+                        <div class="destaque-item">
+                            <span>🔥</span>
+            
+                            <div>
+                                <h3>Feito na hora</h3>
+                                <p>Preparado especialmente para você.</p>
+                            </div>
+                        </div>
+            
+            
+                        <div class="destaque-item">
+                            <span>📲</span>
+            
+                            <div>
+                                <h3>Pedido fácil</h3>
+                                <p>Monte tudo pelo site.</p>
+                            </div>
+                        </div>
+            
+                    </section>
+            
+            
+            
+                    <!-- ========================================
+                         CARDÁPIO
+                    ========================================= -->
+            
+                    <section class="cardapio">
+            
+                        <div class="secao-cabecalho">
+            
+                            <p class="secao-tag">
+                                MONTE SEU PEDIDO
+                            </p>
+            
+                            <h2>
+                                Nosso <span>Cardápio</span>
+                            </h2>
+            
+                            <p>
+                                Escolha seu hambúrguer, adicione acompanhamentos
+                                e complete com sua bebida.
+                            </p>
+            
+                        </div>
+            
+            
+            
+                        <!-- ========================================
+                             HAMBÚRGUERES
+                        ========================================= -->
+            
+                        <div
+                            class="categoria"
+                            id="hamburgueres"
+                        >
+            
+                            <div class="categoria-titulo">
+            
+                                <span>🍔</span>
+            
+                                <div>
+                                    <h3>Hambúrgueres</h3>
+                                    <p>Escolha seu lanche</p>
+                                </div>
+            
+                            </div>
+            
+            
+                            <div
+                                class="produtos"
+                                id="listaHamburgueres"
+                            >
+                                <!-- JavaScript -->
+                            </div>
+            
+            
+                            <div class="continuar">
+            
+                                <a
+                                    href="#acompanhamentos"
+                                    class="botao-continuar"
+                                >
+                                    CONTINUAR PARA ACOMPANHAMENTOS ↓
+                                </a>
+            
+                            </div>
+            
+                        </div>
+            
+            
+            
+                        <!-- ========================================
+                             ACOMPANHAMENTOS
+                        ========================================= -->
+            
+                        <div
+                            class="categoria"
+                            id="acompanhamentos"
+                        >
+            
+                            <div class="categoria-titulo">
+            
+                                <span>🍟</span>
+            
+                                <div>
+                                    <h3>Acompanhamentos</h3>
+                                    <p>Deixe seu pedido ainda melhor</p>
+                                </div>
+            
+                            </div>
+            
+            
+                            <div
+                                class="produtos"
+                                id="listaAcompanhamentos"
+                            >
+                                <!-- JavaScript -->
+                            </div>
+            
+            
+                            <div class="continuar">
+            
+                                <a
+                                    href="#bebidas"
+                                    class="botao-continuar"
+                                >
+                                    CONTINUAR PARA BEBIDAS ↓
+                                </a>
+            
+                            </div>
+            
+                        </div>
+            
+            
+            
+                        <!-- ========================================
+                             BEBIDAS
+                        ========================================= -->
+            
+                        <div
+                            class="categoria"
+                            id="bebidas"
+                        >
+            
+                            <div class="categoria-titulo">
+            
+                                <span>🥤</span>
+            
+                                <div>
+                                    <h3>Bebidas</h3>
+                                    <p>Complete seu pedido</p>
+                                </div>
+            
+                            </div>
+            
+            
+                            <div
+                                class="produtos"
+                                id="listaBebidas"
+                            >
+                                <!-- JavaScript -->
+                            </div>
+            
+            
+                            <div class="continuar">
+            
+                                <button
+                                    type="button"
+                                    class="botao-finalizar-cardapio"
+                                    id="verMeuPedido"
+                                >
+                                    🛒 VER MEU PEDIDO
+                                </button>
+            
+                            </div>
+            
+                        </div>
+            
+                    </section>
+            
+            
+            
+                    <!-- ========================================
+                         CHAMADA
+                    ========================================= -->
+            
+                    <section class="chamada">
+            
+                        <div class="chamada-conteudo">
+            
+                            <p>
+                                BATEU AQUELA FOME?
+                            </p>
+            
+                            <h2>
+                                Então deixa com a
+                                <span>TJ Burguer.</span>
+                            </h2>
+            
+                            <a
+                                href="#hamburgueres"
+                                class="botao-principal"
+                            >
+                                🍔 MONTAR MEU PEDIDO
+                            </a>
+            
+                        </div>
+            
+                    </section>
+            
+            
+            
+                    <!-- ========================================
+                         SOBRE
+                    ========================================= -->
+            
+                    <section
+                        class="sobre"
+                        id="sobre"
+                    >
+            
+                            <img src="images/logo.jpg" alt="">
+            
+                        </div>
+            
+            
+                        <div class="sobre-conteudo">
+            
+                            <p class="secao-tag">
+                                SOBRE A TJ BURGUER
+                            </p>
+            
+            
+                            <h2>
+                                Feito para quem
+                                <span>
+                                    leva hambúrguer a sério.
+                                </span>
+                            </h2>
+            
+            
+                            <p>
+                                Na TJ Burguer, cada lanche é preparado
+                                pensando em uma coisa: entregar sabor
+                                de verdade.
+                            </p>
+            
+            
+                            <p>
+                                Hambúrguer artesanal, ingredientes selecionados
+                                e cuidado em cada detalhe para transformar
+                                seu pedido em uma experiência.
+                            </p>
+            
+            
+                            <div class="sobre-lista">
+            
+                                <div>
+                                    <span>✓</span>
+                                    Ingredientes selecionados
+                                </div>
+            
+                                <div>
+                                    <span>✓</span>
+                                    Preparação na hora
+                                </div>
+            
+                                <div>
+                                    <span>✓</span>
+                                    Pedido direto pelo WhatsApp
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                    </section>
+            
+            
+            
+                    <!-- ========================================
+                         CONTATO
+                    ========================================= -->
+            
+                    <section
+                        class="contato"
+                        id="contato"
+                    >
+            
+                        <div class="secao-cabecalho">
+            
+                            <p class="secao-tag">
+                                FALE COM A GENTE
+                            </p>
+            
+                            <h2>
+                                Entre em <span>contato</span>
+                            </h2>
+            
+                            <p>
+                                Acompanhe a TJ Burguer ou fale conosco
+                                diretamente.
+                            </p>
+            
+                        </div>
+            
+            
+                        <div class="contato-cards">
+            
+                            <a
+                                href="https://wa.me/5562982673927"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contato-card whatsapp"
+                            >
+            
+                                <span>📲</span>
+            
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <p>Fale com a TJ Burguer</p>
+                                </div>
+            
+                            </a>
+            
+            
+                            <a
+                                href="https://www.instagram.com/tj_burguer62/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contato-card instagram"
+                            >
+            
+                                <span>📸</span>
+            
+                                <div>
+                                    <strong>Instagram</strong>
+                                    <p>@tj_burguer62</p>
+                                </div>
+            
+                            </a>
+            
+                        </div>
+            
+                    </section>
+            
+            
+                </main>
+            
+            
+            
+                <!-- ========================================
+                     CARRINHO
+                ========================================= -->
+            
+                <div
+                    class="carrinho-overlay"
+                    id="carrinhoOverlay"
+                ></div>
+            
+            
+                <aside
+                    class="carrinho"
+                    id="carrinho"
+                >
+            
+                    <div class="carrinho-topo">
+            
+                        <div>
+                            <p>SEU PEDIDO</p>
+                            <h2>🛒 Carrinho</h2>
+                        </div>
+            
+                        <button
+                            type="button"
+                            class="fechar-carrinho"
+                            id="fecharCarrinho"
+                            aria-label="Fechar carrinho"
+                        >
+                            ✕
+                        </button>
+            
+                    </div>
+            
+            
+                    <div
+                        class="carrinho-itens"
+                        id="carrinhoItens"
+                    >
+                    </div>
+            
+            
+                    <div class="carrinho-resumo">
+            
+                        <div>
+                            <span>Subtotal</span>
+                            <strong id="subtotalCarrinho">
+                                R$ 0,00
+                            </strong>
+                        </div>
+            
+                        <div>
+                            <span>Taxa de entrega</span>
+                            <strong id="taxaEntregaTexto">
+                                A calcular
+                            </strong>
+                        </div>
+            
+                        <div class="carrinho-total">
+                            <span>Total</span>
+            
+                            <strong id="totalCarrinho">
+                                R$ 0,00
+                            </strong>
+                        </div>
+            
+                    </div>
+            
+            
+                    <button
+                        type="button"
+                        class="botao-ir-checkout"
+                        id="irCheckout"
+                    >
+                        CONTINUAR PEDIDO
+                    </button>
+            
+                </aside>
+            
+            
+            
+                <!-- ========================================
+                     CHECKOUT
+                ========================================= -->
+            
+                <div
+                    class="checkout-overlay"
+                    id="checkoutOverlay"
+                >
+            
+                    <section class="checkout">
+            
+                        <div class="checkout-topo">
+            
+                            <div>
+                                <p>FINALIZAÇÃO</p>
+                                <h2>Complete seu pedido</h2>
+                            </div>
+            
+            
+                            <button
+                                type="button"
+                                id="fecharCheckout"
+                                class="fechar-checkout"
+                                aria-label="Fechar finalização"
+                            >
+                                ✕
+                            </button>
+            
+                        </div>
+            
+            
+            
+                        <div class="checkout-conteudo">
+            
+            
+                            <div class="checkout-bloco">
+            
+                                <h3>👤 Seus dados</h3>
+            
+            
+                                <label for="nomeCliente">
+                                    Nome
+                                </label>
+            
+                                <input
+                                    type="text"
+                                    id="nomeCliente"
+                                    placeholder="Digite seu nome"
+                                >
+            
+            
+                                <label for="telefoneCliente">
+                                    Telefone
+                                </label>
+            
+                                <input
+                                    type="tel"
+                                    id="telefoneCliente"
+                                    placeholder="(62) 99999-9999"
+                                >
+            
+                            </div>
+            
+            
+            
+                            <div class="checkout-bloco">
+            
+                                <h3>🛵 Como deseja receber?</h3>
+            
+            
+                                <div class="opcoes-entrega">
+            
+                                    <label class="opcao">
+            
+                                        <input
+                                            type="radio"
+                                            name="tipoEntrega"
+                                            value="entrega"
+                                            checked
+                                        >
+            
+                                        <span>
+                                            🛵 Entrega
+                                        </span>
+            
+                                    </label>
+            
+            
+                                    <label class="opcao">
+            
+                                        <input
+                                            type="radio"
+                                            name="tipoEntrega"
+                                            value="retirada"
+                                        >
+            
+                                        <span>
+                                            🏪 Retirada
+                                        </span>
+            
+                                    </label>
+            
+                                </div>
+            
+                            </div>
+            
+            
+            
+                            <div
+                                class="checkout-bloco"
+                                id="dadosEndereco"
+                            >
+            
+                                <h3>📍 Endereço</h3>
+            
+            
+                                <label for="ruaCliente">
+                                    Rua / Avenida
+                                </label>
+            
+                                <input
+                                    type="text"
+                                    id="ruaCliente"
+                                    placeholder="Ex: Rua das Flores"
+                                >
+            
+            
+                                <div class="campos-linha">
+            
+                                    <div>
+                                        <label for="numeroCliente">
+                                            Número
+                                        </label>
+            
+                                        <input
+                                            type="text"
+                                            id="numeroCliente"
+                                            placeholder="123"
+                                        >
+                                    </div>
+            
+            
+                                    <div>
+                                        <label for="bairroCliente">
+                                            Bairro
+                                        </label>
+            
+                                        <input
+                                            type="text"
+                                            id="bairroCliente"
+                                            placeholder="Seu bairro"
+                                        >
+                                    </div>
+            
+                                </div>
+            
+            
+                                <label for="complementoCliente">
+                                    Complemento
+                                </label>
+            
+                                <input
+                                    type="text"
+                                    id="complementoCliente"
+                                    placeholder="Casa, apartamento, referência..."
+                                >
+            
+                            </div>
+            
+            
+            
+                            <div class="checkout-bloco">
+            
+                                <h3>💳 Pagamento</h3>
+            
+            
+                                <select id="formaPagamento">
+            
+                                    <option value="">
+                                        Selecione
+                                    </option>
+            
+                                    <option value="PIX">
+                                        PIX
+                                    </option>
+            
+                                    <option value="Dinheiro">
+                                        Dinheiro
+                                    </option>
+            
+                                    <option value="Cartão">
+                                        Cartão
+                                    </option>
+            
+                                </select>
+            
+            
+                                <div
+                                    id="campoTroco"
+                                    class="campo-troco"
+                                >
+            
+                                    <label for="trocoCliente">
+                                        Troco para quanto?
+                                    </label>
+            
+                                    <input
+                                        type="text"
+                                        id="trocoCliente"
+                                        placeholder="Ex: R$ 100,00"
+                                    >
+            
+                                </div>
+            
+                            </div>
+            
+            
+            
+                            <div class="checkout-bloco">
+            
+                                <h3>📝 Observações</h3>
+            
+                                <textarea
+                                    id="observacoesCliente"
+                                    rows="4"
+                                    placeholder="Ex: retirar cebola, molho separado..."
+                                ></textarea>
+            
+                            </div>
+            
+            
+            
+                            <div class="checkout-resumo">
+            
+                                <h3>Resumo</h3>
+            
+                                <div id="checkoutItens"></div>
+            
+            
+                                <div class="checkout-total">
+            
+                                    <span>Total do pedido</span>
+            
+                                    <strong id="checkoutTotal">
+                                        R$ 0,00
+                                    </strong>
+            
+                                </div>
+            
+                            </div>
+            
+            
+            
+                            <button
+                                type="button"
+                                id="finalizarWhatsApp"
+                                class="botao-whatsapp"
+                            >
+                                📲 FINALIZAR NO WHATSAPP
+                            </button>
+            
+                        </div>
+            
+                    </section>
+            
+                </div>
+            
+            
+            
+                <!-- ========================================
+                     MENSAGEM
+                ========================================= -->
+            
+                <div
+                    class="toast"
+                    id="toast"
+                >
+                    Produto adicionado ao carrinho!
+                </div>
+            
+            
+            
+                <!-- ========================================
+                     WHATSAPP FLUTUANTE
+                ========================================= -->
+            
+                <a
+                    href="https://wa.me/5562982673927"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="whatsapp-flutuante"
+                    aria-label="Falar com a TJ Burguer pelo WhatsApp"
+                >
+                    📲
+                </a>
+            
+            
+            
+                <!-- ========================================
+                     RODAPÉ
+                ========================================= -->
+            
+                <footer>
+            
+                    <div class="footer-logo">
+                        TJ <span>BURGUER</span>
+                    </div>
+            
+            
+                    <p>
+                        Hambúrguer artesanal • Sabor de verdade
+                    </p>
+            
+            
+                    <div class="footer-links">
+            
+                        <a href="#inicio">
+                            Início
+                        </a>
+            
+                        <a href="#hamburgueres">
+                            Cardápio
+                        </a>
+            
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+            
+                        <a href="#contato">
+                            Contato
+                        </a>
+            
+                    </div>
+            
+            
+                    <div class="footer-redes">
+            
+                        <a
+                            href="https://wa.me/5562982673927"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            WhatsApp
+                        </a>
+            
+            
+                        <a
+                            href="https://www.instagram.com/tj_burguer62/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram
+                        </a>
+            
+                    </div>
+            
+            
+                    <div class="footer-final">
+                        © 2026 TJ Burguer — Todos os direitos reservados.
+                    </div>
+            
+                </footer>
+            
+            
+            
+                <script src="script.js"></script>
+            
+            </body>
+            
+            </html>2026 TJ Burguer — Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
